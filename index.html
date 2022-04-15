@@ -32,13 +32,10 @@ body, html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 }
 
-/* Increase the font size of the h1 element 
-.header h1 {
-  font-size: 55px;
 
-}*/
 
 /* Style the top navigation bar */
 .navbar {
@@ -46,6 +43,8 @@ body, html {
   background-color: black;
   position: relative;
   text-align: center;
+  /*padding-bottom: 220px;*/
+  z-index: 1;
 }
 
 /* Style the navigation bar links */
@@ -59,6 +58,7 @@ body, html {
   justify-content: space-between;
   justify-content: center;
   border-radius: 10px;
+  position: relative;
 }
 
 
@@ -79,6 +79,7 @@ body, html {
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
+  position: relative;
 }
 
 
@@ -215,7 +216,7 @@ body, html {
 
 /*modifies content */
 #content{
-  width: auto;
+  width: 90%;
 }
 
 /*modifies content h2*/
@@ -230,16 +231,45 @@ body, html {
   padding-left:50px;
 }
 
+#sponsor,#partner{
+  display: inline-block;
+  padding-left:50px;
+}
+
+/*.fusion-body .fusion-builder-nested-column-0{
+  width:100% !important;
+  margin-top : 0px;
+  margin-bottom : 20px;}
+
+  .fusion-builder-nested-column-0 > .fusion-column-wrapper {
+    padding-top : 0px !important;
+    padding-right : 0px !important;
+    margin-right : 1.92%;
+    padding-bottom : 0px !important;
+    padding-left : 0px !important;
+    margin-left : 1.92%;}
+
+    @media only screen and (max-width:1024px) {
+      .fusion-body .fusion-builder-nested-column-0{
+        width:100% !important;order : 0;}
+
+    .fusion-builder-nested-column-0 > .fusion-column-wrapper {
+      margin-right : 1.92%;margin-left : 1.92%;}
+
+      @media only screen and (max-width:640px) {.fusion-body .fusion-builder-nested-column-0{width:100% !important;order : 0;}.fusion-builder-nested-column-0 > .fusion-column-wrapper {margin-right : 1.92%;margin-left : 1.92%;}}*/
+
 </style>
 </head>
 <body>
 
 <div class="header"></div>
 
-<!-- Applied bootstrap for navbar style -->
+<!-- Applied bootstrap for navbar style 1 -->
 <div class="navbar navbar-expand-sm bg-dark">
   <a href="#">Home</a>
   <a href="#">Events</a>
+  <a href="#">Gallery</a>
+  <a href="#">Interesting Places</a>
   <a href="#">Comittee</a>
   <a href="#">Feedback Form</a>
   <a href="#">About Us</a>
@@ -256,7 +286,7 @@ body, html {
     <li><a href="">KNK: Negara Brunei Darussalam</a><br></li>
   </ul>
   <br>
-<!-- Applied bootstrap for button design -->
+<!-- Applied bootstrap for button design 2 -->
   <button id="btnDec" class="btn btn-outline-dark">December</button><br><br>
   <ul class="dec">
     <li><a href="">Mindquest Online Premier Chess League 2021</a><br></li>
@@ -271,7 +301,7 @@ body, html {
   <div class="main">
 
 <!-- Standard Banner -->
-<!-- Applied bootstrap for responsive image -->
+<!-- Applied bootstrap for responsive image 3 -->
 <div id="run-image" class="img-fluid">
   <div id="run-text">
     <h1 style="font-size:50px">Run like the wind!</h1>
@@ -310,7 +340,7 @@ body, html {
   </div>
 </div>
 </div>
-<!-- jQuery Option 1: toggle content -->
+<!-- jQuery 1: toggle content -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -325,4 +355,33 @@ $(document).ready(function(){
 </script>
 
 </body>
+<footer class="bg-dark text-center text-lg-start">
+  <div>
+    <img src="">
+    <img src="">
+    <img src="">
+    <img src="">
+
+<!-- Partners and sponsors -->
+<div id="sponsor">
+<p>Sponsors and partners</p>
+<span style="max-width:200px;"><img width="200" height="200" src="https://www.bruneitourism.com/wp-content/uploads/2021/11/mipr-logo-circle.png?_t=1637558130" class="img-responsive wp-image-24737" srcset="https://www.bruneitourism.com/wp-content/uploads/2021/11/mipr-logo-circle-200x200.png 200w, https://www.bruneitourism.com/wp-content/uploads/2021/11/mipr-logo-circle.png 366w" sizes="(max-width: 1024px) 100vw, (max-width: 640px) 100vw, 366px">
+</span>
+
+<span style="max-width:200px;"><img width="200" height="200" title="MCYS-logo-circle" src="https://www.bruneitourism.com/wp-content/uploads/2021/11/MCYS-logo-circle.png?_t=1637558149" class="img-responsive wp-image-24742" srcset="https://www.bruneitourism.com/wp-content/uploads/2021/11/MCYS-logo-circle-200x200.png 200w, https://www.bruneitourism.com/wp-content/uploads/2021/11/MCYS-logo-circle.png 366w" sizes="(max-width: 1024px) 100vw, (max-width: 640px) 100vw, 366px">
+</span>
+
+<div id="partner"></div>
+<span style="max-width:200px;"><img width="200" height="200"   title="moh-logo-circle" src="https://www.bruneitourism.com/wp-content/uploads/2021/11/moh-logo-circle.png?_t=1637558948" class="img-responsive wp-image-24747" srcset="https://www.bruneitourism.com/wp-content/uploads/2021/11/moh-logo-circle-200x200.png 200w, https://www.bruneitourism.com/wp-content/uploads/2021/11/moh-logo-circle.png 366w" sizes="(max-width: 1024px) 100vw, (max-width: 640px) 100vw, 366px"> 
+
+<span style="max-width:200px;"><img width="200" height="200"   title="moh-logo-circle" src="https://www.bruneitourism.com/wp-content/uploads/2021/11/moh-logo-circle.png?_t=1637558948" class="img-responsive wp-image-24747" srcset="https://www.bruneitourism.com/wp-content/uploads/2021/11/moh-logo-circle-200x200.png 200w, https://www.bruneitourism.com/wp-content/uploads/2021/11/moh-logo-circle.png 366w" sizes="(max-width: 1024px) 100vw, (max-width: 640px) 100vw, 366px"> 
+</span> 
+
+
+
+</div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © BWEP_Group 6
+  </div>
+</footer>
 </html>
